@@ -10,6 +10,7 @@ tag morse-letter
 
 	def flipValue
 		morse = !morse
+		setMorseValue!
 
 	def setMorseValue
 		displayValue = value
@@ -25,10 +26,11 @@ tag morse-letter
 		$hoverBgc = hsl.replace("light", "70%")
 		$hoverShadow = hsl.replace("light", "50%")
 
-	def render
-		setMorseValue!
+	def setup 
 		setColor!
+		setMorseValue!
 
+	def render
 		<self>
 			<div.letter
 			[
@@ -37,7 +39,7 @@ tag morse-letter
 				$hoverBgc:{$hoverBgc}
 				$hoverShadow:{$hoverShadow}
 			]
-			@click=flipValue> "{displayValue}"
+			@click=flipValue> displayValue
 
 css morse-letter
 	d:inline-block
@@ -45,7 +47,7 @@ css morse-letter
 	.letter
 		py:2 px:4
 		fs:2rem ta:center
-		bgc:$bgc shadow: 0px 5px $shadow c:#202020
+		bgc:$bgc shadow: 0px 5px $shadow c:gray9
 		mx:2 my:2 rd:3
 		min-width: 4ch
 		us:none cursor:pointer
