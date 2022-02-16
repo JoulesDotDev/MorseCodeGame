@@ -1,5 +1,4 @@
 import getHangmanWord from 'app/functions/getHangmanWord'
-import 'app/components'
 
 tag hangman-game
 	word = ""

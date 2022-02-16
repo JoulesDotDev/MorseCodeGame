@@ -1,5 +1,3 @@
-import 'app/components'
-
 tag hangman-word
 	value = ""
 	guesses = []
