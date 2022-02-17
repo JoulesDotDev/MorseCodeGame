@@ -2,7 +2,7 @@
   "name": "morse-code-game",
   "scripts": {
     "start": "imba -w server.imba",
-    "build": "imba build server.imba"
+    "build": "imba build server.imba -M -H -S"
   },
   "dependencies": {
     "express": "^4.17.1",

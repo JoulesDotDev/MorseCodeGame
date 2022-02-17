@@ -1,9 +1,5 @@
 {
     "compilerOptions": {
-      "baseUrl": ".",
-      "declaration": true,
-      "composite": true,
-      "noEmit": false,
-      "emitDeclarationOnly": true
+      "baseUrl": "."
     }
 }
