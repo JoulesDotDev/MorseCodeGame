@@ -8,8 +8,9 @@ const words = [
 	"bugs"
 	"tarp"
 	"kill"
-	"make",
+	"make"
 	"water"
+	"bean"
 ]
 
 export default do

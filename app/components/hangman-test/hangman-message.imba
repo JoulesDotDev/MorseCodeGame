@@ -16,4 +16,4 @@ css hangman-message
 	c:white
 	ta:center
 	fw: bold fs:1.2em
-	mt:7
+	mt:7 px:3
