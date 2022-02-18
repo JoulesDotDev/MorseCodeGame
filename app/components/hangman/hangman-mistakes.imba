@@ -1,12 +1,9 @@
-tag hangman-mistakes
-	mistakes = []
-
+tag hangman-mistakes < game-state
 	def render
 		<self> 
-			for mistake in mistakes
+			for mistake in #game.mistakes
 				<div>
 					mistake
-			else
 
 css hangman-mistakes
 	c:white min-height:40px

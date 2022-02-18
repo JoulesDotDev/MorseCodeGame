@@ -2,7 +2,7 @@ import 'app/components'
 
 tag morse-word
 	value = ""
-	morse = true
+	morse = yes
 	color = 1
 
 	def setColor

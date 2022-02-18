@@ -4,7 +4,7 @@ tag morse-letter
 	value = ""
 	morseValue = ""
 	displayValue = ""
-	morse = false
+	morse = no
 	color = 1
 	hsl = "hsl(hue, 50%, light)"
 

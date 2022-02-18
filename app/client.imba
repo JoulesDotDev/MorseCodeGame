@@ -6,6 +6,6 @@ let text = "aaa"
 
 tag app
 	<self>
-		<hangman-game>
+		<hangman>
 
 imba.mount <app>
