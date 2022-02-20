@@ -25,6 +25,5 @@ const morseCode =
 	X: "-..-"
 	Y: "-.--"
 	Z: "--.."
-	"?": "..--.."
 
 export default morseCode
