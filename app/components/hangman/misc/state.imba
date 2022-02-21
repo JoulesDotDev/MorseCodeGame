@@ -1,14 +1,13 @@
 import getWord from './getWord.imba'
 
 class State
-	constructor
-		init!
-
 	def init
 		word = getWord!
 		correct = []
 		complete = no
 		mitakes = []
+		attempts = 15
+		timer = 1
 
 	def clear
 		init!
