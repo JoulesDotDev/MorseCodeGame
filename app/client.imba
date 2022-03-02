@@ -1,12 +1,12 @@
+import 'app/misc'
 import 'app/router'
 import 'app/components'
 import 'app/style'
 
-tag app
-	css max-width: 480px m:0 auto px:10 us:none
-
-	<self>
+tag app < app-state
+	
+	<self [d:none] [d:block]=(#app.ready)>
 		<app-header>
-		<app-router>
+		<app-router.limited>
 
 imba.mount <app>

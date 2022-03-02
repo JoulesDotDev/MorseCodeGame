@@ -8,6 +8,7 @@ class State
 		mitakes = []
 		attempts = 15
 		timer = 1
+		buffer = []
 
 	def clear
 		init!

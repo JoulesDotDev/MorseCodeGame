@@ -1,7 +1,11 @@
 tag app-menu
 
-	css mt: 30 ta:center
+	css mt:14 ta:center d:flex flw:wrap jc:center
 
 	<self> 
-		<link-button route-to="/hangman"> "Hangman"
+		<menu-option route-to="/hangman"> 
+			<hangman-icon slot="icon">
+			"Hangman"
+		
+
 
