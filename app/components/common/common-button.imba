@@ -1,6 +1,6 @@
 tag common-button
-	css bg:white @hover:gray2 c:gray9
+	css bgc:cooler7 @hover:cooler6 c:cooler3
 		transform@active: translateY(5px)
-		shadow: 0px 5px 0px gray5 @active:none
-	<self> 
-
+		shadow: 0px 4px 1px cooler8 @active:none
+	<self>
+		<slot>

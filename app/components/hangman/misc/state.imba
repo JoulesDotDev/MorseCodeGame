@@ -9,6 +9,7 @@ class State
 		attempts = 15
 		timer = 1
 		buffer = []
+		currentLetter = []
 
 	def clear
 		init!

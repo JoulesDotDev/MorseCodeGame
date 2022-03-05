@@ -1,21 +1,26 @@
-tag hangman-buttons
+tag hangman-buttons < hangman-state
 
 	css w: 200px m:0 auto
 		mt:12 d:flex jc:center
-		.button d:grid mx:2.5 fs:2.5em h:12 w:12 rd:0
-			outline:0 bd:0 bgc:cool8 c:white jc:center ai:center
+
+	css common-button h:12 w:12 d:flex
+		jc:center ai:center mx:2
+		i fs:1.6em
 
 	def press value
-		console.log value
+		#game.currentLetter.push value
+		console.log #game.currentLetter
 
 	<self> 
-		<div.button @click=(press '.')>
+		<common-button @click=(press '.')>
 			<dot>
-		<div.button @click=(press '-')>
+		<common-button @click=(press '-')>
 			<dash>
+		<common-button @click.emit('submit')>
+			<i.fa-solid.fa-arrow-right>	
 
 tag dot
-	css h:3.5 w:3.5 bgc:white rd:full
+	css h:3.5 w:3.5 bgc:cooler3 rd:full
 
 tag dash
-	css h:2 w:6 bgc:white rd:xs
+	css h:2 w:6.5 bgc:cooler3 rd:xs

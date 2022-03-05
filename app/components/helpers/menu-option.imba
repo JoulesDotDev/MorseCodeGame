@@ -7,7 +7,7 @@ tag menu-option < common-button
 		transform: translate(-50%, -50%)
 		fs:1.9em
 	css .text pos:absolute b:4.5 l:0 r:0 
-		fs:1.1em
+		fs:1.1em cooler7
 
 	<self> 
 		<div.icon><slot name="icon">

@@ -7,7 +7,7 @@ tag hangman-game < hangman-state
 		setup!
 
 	<self> 
-		<hangman-attempts>
 		<hangman-word>
-		<hangman-timer>
+		<hangman-attempts>
+		<hangman-input>
 		<hangman-buttons>

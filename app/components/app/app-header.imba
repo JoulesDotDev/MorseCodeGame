@@ -1,6 +1,6 @@
 tag app-header < app-state
 
-	css .background bgc:gray8 shadow: 0px 8px 0px gray7 
+	css .background bgc:cooler8 shadow: 0px 7px 1px cooler7 
 		px:4 py:6
 	css h1 fs:1.8em m:0 ta:center us:none
 	css back-button mt:8

@@ -4,4 +4,4 @@ tag back-button < common-button
 		<slot>
 
 css back-button
-	p:3 6 d:inline-block
+	p:3 6 pb:2.6 d:inline-block
