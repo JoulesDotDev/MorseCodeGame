@@ -1,6 +1,6 @@
 tag hangman-buttons < hangman-state
 
-	css w: 200px m:0 auto
+	css w: 275px m:0 auto
 		mt:12 d:flex jc:center
 
 	css common-button h:12 w:12 d:flex
@@ -8,15 +8,21 @@ tag hangman-buttons < hangman-state
 		i fs:1.6em
 
 	def press value
-		#game.currentLetter.push value
-		console.log #game.currentLetter
+		unless #game.currentLetter.length >= #game.maxLetters
+			#game.currentLetter.push value
+	
+	def remove
+		if #game.currentLetter.length > 0
+			#game.currentLetter.pop!
 
 	<self> 
+		<common-button @click=remove>
+			<i.fa-solid.fa-arrow-left>	
 		<common-button @click=(press '.')>
 			<dot>
 		<common-button @click=(press '-')>
 			<dash>
-		<common-button @click.emit('submit')>
+		<common-button @click.emit('submitLetter')>
 			<i.fa-solid.fa-arrow-right>	
 
 tag dot
