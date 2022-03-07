@@ -25,12 +25,15 @@ tag hangman-game < hangman-state
 
 					if #game.word.includes letter
 						for character in #game.word
-							#game.correct.push letter if character === letter
+							if character === letter
+								#game.correct.push letter 
+								#game.message = "Correct guess: \"{letter}\""
 						if #game.correct.length === #game.word.length
 							#game.complete = yes
 							#game.message = "You guessed the word! it was \"{#game.word}\""
 					else 
 						#game.mistakes.push letter
+						#game.message = "Wrong guess: \"{letter}\""
 						#game.attempts--
 
 					if #game.attempts == 0 && !#game.complete

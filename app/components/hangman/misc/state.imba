@@ -18,7 +18,7 @@ class State
 
 	def clear
 		init true
-		setTimeout(&, 2000) do 
+		setTimeout(&, 2500) do 
 			message = ""
 			imba.commit!
 
