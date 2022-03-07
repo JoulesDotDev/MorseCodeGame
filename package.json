@@ -2,7 +2,7 @@
   "name": "morse-code-game",
   "scripts": {
     "dev": "imba -w server.imba",
-    "start": "npm run build && node ./dist/server.loader.js",
+    "start": "npm run build && node ./build.js && node ./dist/server.loader.js",
     "build": "imba build server.imba -M -H -S"
   },
   "dependencies": {
