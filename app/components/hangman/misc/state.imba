@@ -3,7 +3,7 @@ import getWord from './getWord.imba'
 class State
 	message = ""
 
-	def init
+	def init rerun
 		word = getWord!
 		correct = []
 		complete = no
@@ -12,9 +12,12 @@ class State
 		timer = 1
 		currentLetter = []
 		maxLetters = 4
+		if message && !rerun
+			message = ""
+			imba.commit!
 
 	def clear
-		init!
+		init true
 		setTimeout(&, 2000) do 
 			message = ""
 			imba.commit!
