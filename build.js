@@ -9,6 +9,5 @@ fs.readFile(filename, 'utf8', function (err, data) {
 	.replace('all.css', 'all.css?v=' + timeStamp)
 
 	fs.writeFile(filename, newData, 'utf8', function (err) {
-		if (err) console.log(err)
 	})
 })
