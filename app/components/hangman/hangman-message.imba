@@ -7,7 +7,7 @@ tag hangman-message < hangman-state
 		transform:translateX(-50%) t:-50 .show:28
 		tween: top ease 250ms
 
-		&.modal tween:unset t:50% mt:0 transform:translate(-50%, -50%)
+		&.modal tween:unset t:50% mt:0 transform:translate(-50%, -40%)
 			bgc: cooler9
 			.message my:12
 
