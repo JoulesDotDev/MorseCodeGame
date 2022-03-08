@@ -4,7 +4,6 @@ tag hangman-game < hangman-state
 
 	def setup
 		#game.init!
-		console.log(#game.word)
 	
 	def mount
 		setup!
