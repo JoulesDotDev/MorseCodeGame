@@ -5,7 +5,7 @@ tag hangman-message < hangman-state
 	css .messageBox d:block ta:center m:0 auto fs:1.1em max-width: 350px
 		bgc: cooler8 p:6 6 pos:fixed l:50% 
 		transform:translateX(-50%) t:-50 .show:28.3
-		tween: top ease 250ms bd: 2px solid cooler6
+		tween: top ease 250ms bd: 3px solid cooler6
 
 		&.modal tween:unset t:50% mt:0 transform:translate(-50%, -40%)
 			bgc: cooler9
