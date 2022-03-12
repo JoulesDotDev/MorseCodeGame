@@ -9,7 +9,7 @@ export default def checkGuess(game)
 			if morse === guess
 				found = yes
 				if game.correct.includes(letter) or game.mistakes.includes(letter)
-					game.message = ["You already guessed the letter \"{letter}\"", 0]
+					game.message = ["You already guessed the letter \"{letter}\"", 2000]
 					game.currentLetter = []
 					return
 
